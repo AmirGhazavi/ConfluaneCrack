@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+confluence:
+image: # enter your crack image name
+ports:
+- "8090:8090" # Host:Container
+volumes:
+- confluence_home:/var/atlassian/confluence # Persistent storage
+
+volumes:
+confluence_home:
